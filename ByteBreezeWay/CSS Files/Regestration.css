@@ -1,0 +1,271 @@
+body {
+    font-family: poppins;
+    overflow: hidden;
+    -webkit-user-select: none;
+    /* webkit (safari, chrome) browsers */
+    -moz-user-select: none;
+    /* mozilla browsers */
+    -khtml-user-select: none;
+    /* webkit (konqueror) browsers */
+    -ms-user-select: none;
+}
+
+form {
+    display: flex;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(102, 102, 102, 0.35);
+    border-style: solid;
+    border-width: 1px;
+    padding: 3% 2%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Center the form horizontally */
+    align-items: center;
+    /* Center the form vertically */
+    height: 100vh;
+    /* Use the full height of the viewport */
+}
+
+.form_logo {
+    width: 5%;
+    height: auto;
+}
+
+.crt_acc_txt_div span {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.alrd_txt_div a {
+    color: black;
+}
+
+.alrd_txt_div span {
+    font-size: 1.1vw;
+}
+
+.name_form_div {
+    margin: 3% 0 0 0;
+}
+
+.name_form_div,
+.email_form_div,
+.password_form_div {
+    display: flex;
+}
+
+#firstname,
+#lastname,
+#password,
+#confirm_password {
+    width: 17vw;
+}
+
+#firstname,
+#lastname {
+    padding: 4%;
+    font-size: 1vw;
+    margin: 1% 0 0 0;
+    border-radius: 0.5vw;
+    border-color: rgba(102, 102, 102, 0.35);
+    border-style: solid;
+    border-width: 1px;
+}
+
+#email {
+    width: 35.5vw;
+    padding: 2.5%;
+    font-size: 1vw;
+    margin: 1% 0 0 0;
+    border-radius: 0.5vw;
+    border-color: rgba(102, 102, 102, 0.35);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.first_name_div {
+    padding: 0 5% 0 0;
+}
+
+.pass_note_div {
+    font-size: 1vw;
+    margin: -1% 0 2% 0;
+}
+
+.chck_pass_box_div {
+    margin: 1% 2% 0 0;
+}
+
+input[type=checkbox] {
+    height: 2vh;
+    border-radius: 0.5vw;
+    width: 1vw;
+    margin: 0 2% 0 0;
+}
+
+label {
+    font-size: 1vw;
+}
+
+.log_insteda_div {
+    margin: 3% 0 0 0;
+    display: flex;
+}
+
+.log_insteda_div a {
+    color: black;
+}
+
+.login_in_instead_txt span {
+    font-size: 1vw;
+}
+
+.login_in_instead_txt {
+    width: 25.5vw;
+    margin: 0 0 0 0;
+}
+
+.crt_acc_btn_div {
+    margin: 0 0 0 0;
+}
+
+.crt_acc_btn {
+    width: 12vw;
+    border: none;
+    border-radius: 3vw;
+    padding: 8% 4%;
+    font-size: 1vw;
+    color: white;
+    cursor: pointer;
+    background-color: #c3c3c3;
+}
+
+.illustration_img {
+    margin: 8% 0 0 5%;
+}
+
+.illustration_img img {
+    width: 25vw;
+    height: auto;
+}
+
+#password,
+#confirm_password {
+    padding: 4%;
+    font-size: 1vw;
+    margin: 1% 0 0 0;
+    border-radius: 0.5vw;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    transition: border-color 0.3s;
+}
+
+#password:focus,
+#confirm_password:focus {
+    outline: none;
+    /* Remove default outline */
+}
+
+.error {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+.success {
+    border: 2px solid green !important;
+    outline: none;
+}
+
+.crt_acc_btn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.crt_acc_btn {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    padding: 10px 20px;
+    /* Some padding */
+    border: none;
+    /* Remove borders */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    opacity: 0.9;
+    /* Slightly transparent */
+    transition: opacity 0.3s;
+}
+
+.crt_acc_btn:hover {
+    opacity: 1;
+}
+
+
+/*OTP Form*/
+
+
+/* CSS for sliding animation */
+
+.left_form_div {
+    justify-content: center;
+    /* Vertically center content */
+    align-items: center;
+    /* Horizontally center content */
+}
+
+.digit_input_div {
+    display: none;
+    /* Initially hidden */
+    justify-content: space-between;
+    margin: 30% 5% 0 0;
+    padding: 0 3 0 3%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.digit_input_div.show-digits {
+    display: flex;
+    /* Show when the class is added */
+    opacity: 1;
+}
+
+.digit_input_div input {
+    width: 2vw;
+    /* Adjust the width as needed */
+    height: 3rem;
+    /* Adjust the height as needed */
+    text-align: center;
+    margin: 1% 2%;
+    border: 0.2vw solid #ccc;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.digit_input_div input.valid {
+    border-color: green;
+}
+
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.otp_label {
+    display: none;
+    font-size: 1.5vw;
+    /* Set font size to be bigger */
+    font-weight: bold;
+    /* Make the font bold */
+    text-decoration: underline;
+    /* Add underline */
+    margin-bottom: 10px;
+    /* Add space below the label */
+}
